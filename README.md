@@ -94,3 +94,5 @@ Quando você clica em um dos botões, o sistema executa a ação correspondente 
 
    ```bash
    javac -d bin src/main/*.java
+
+java -cp bin main.TelaPrincipal
