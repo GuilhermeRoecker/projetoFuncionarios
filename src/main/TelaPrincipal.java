@@ -20,6 +20,15 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 public class TelaPrincipal extends JFrame {
+
+    public static void main(String[] args) {
+        // Exibe a interface principal
+        SwingUtilities.invokeLater(() -> {
+            TelaPrincipal tela = new TelaPrincipal();
+            tela.setVisible(true);
+        });
+    }
+
     Arquivo arquivo = new Arquivo();
     Map<String, ArrayList<Funcionario>> mapaFuncionarios;
 
@@ -241,13 +250,5 @@ public class TelaPrincipal extends JFrame {
                 JOptionPane.showMessageDialog(this, "Ação não reconhecida");
         }
 
-    }
-
-    public static void main(String[] args) {
-        // Exibe a interface principal
-        SwingUtilities.invokeLater(() -> {
-            TelaPrincipal tela = new TelaPrincipal();
-            tela.setVisible(true);
-        });
     }
 }
